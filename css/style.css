@@ -11,7 +11,9 @@ Dark green: #28b485
   --timing-function-header: cubic-bezier(0.18, 1.17, 0.29, 1.13);
 }
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
