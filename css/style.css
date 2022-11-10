@@ -44,3 +44,48 @@ body {
 .logo {
   height: 35px;
 }
+
+.header__center-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header__title,
+.header__subtitle {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header__title {
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  margin-right: -35px;
+}
+
+.header__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.5px;
+  margin-right: -17.5px;
+  margin-bottom: 60px;
+  white-space: nowrap;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 100px;
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #777;
+}
