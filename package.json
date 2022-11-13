@@ -1,0 +1,26 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "natours layout project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturAbdullin/Natours.git"
+  },
+  "keywords": [
+    "html",
+    "scss"
+  ],
+  "author": "Artur Abdullin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturAbdullin/Natours/issues"
+  },
+  "homepage": "https://github.com/ArturAbdullin/Natours#readme",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}
