@@ -1,0 +1,14 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin col-width($cols, $gutter-h: 0, $col-span: 1) {
+  width: calc(
+    (100% - $gutter-h * ($cols - 1)) * $col-span / $cols + ($col-span - 1) *
+      $gutter-h
+  );
+}
