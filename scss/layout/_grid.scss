@@ -2,7 +2,7 @@
 
 .row {
   max-width: $grid-width;
-  background-color: lightgray;
+  // background-color: lightgray;
   margin-inline: auto;
 
   &:not(:last-child) {
@@ -11,8 +11,8 @@
 
   [class^="col-"] {
     float: left;
-    background-image: linear-gradient(to right top, yellow, orange);
-    text-align: center;
+    // background-image: linear-gradient(to right top, yellow, orange);
+    // text-align: center;
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;

@@ -3,6 +3,8 @@
 @use "./components/button";
 @use "./components/logo";
 @use "./layout/header";
+@use "./pages/home";
+@use "./layout/grid";
 
 :root {
   --timing-function-header: cubic-bezier(0.18, 1.17, 0.29, 1.13);
