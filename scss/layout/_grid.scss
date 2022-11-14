@@ -1,0 +1,27 @@
+@use "../abstracts/" as *;
+
+.row {
+  max-width: $grid-width;
+  background-color: lightgray;
+  margin-inline: auto;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  [class^="col-"] {
+    float: left;
+    background-image: linear-gradient(to right top, yellow, orange);
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  .col-1-of-2 {
+    @include col-width(2, $gutter-horizontal);
+  }
+
+  @include clearfix;
+}
