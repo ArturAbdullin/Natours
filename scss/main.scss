@@ -1,8 +1,6 @@
 @use "./abstracts" as *;
 @use "./base";
-@use "./components/button";
-@use "./components/logo";
-@use "./components/composition";
+@use "components";
 @use "./layout/header";
 @use "./pages/home";
 @use "./layout/grid";
