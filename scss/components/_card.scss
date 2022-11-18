@@ -5,7 +5,7 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   font-size: $default-font-size;
-  height: 50rem;
+  height: 52rem;
 
   &__side {
     position: absolute;
@@ -15,7 +15,6 @@
     height: 100%;
     transition: all 1s ease;
     backface-visibility: hidden;
-    color: $color-font-light;
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem $color-shadow;
@@ -100,6 +99,26 @@
         rgba($color-secondary-light, 0.85),
         rgba($color-secondary-dark, 0.85)
       );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin-inline: auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-background-gray-2;
+        }
+      }
     }
   }
 }
