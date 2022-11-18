@@ -23,6 +23,10 @@
     @include col-width(2, $gutter-horizontal);
   }
 
+  .col-1-of-3 {
+    @include col-width(3, $gutter-horizontal);
+  }
+
   .col-1-of-4 {
     @include col-width(4, $gutter-horizontal);
   }
