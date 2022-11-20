@@ -4,6 +4,7 @@
 @use "./layout/header";
 @use "./pages/home";
 @use "./layout/grid";
+@use "./layout/footer";
 
 :root {
   --timing-function-header: cubic-bezier(0.18, 1.17, 0.29, 1.13);
