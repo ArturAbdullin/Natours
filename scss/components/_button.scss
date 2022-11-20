@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 
 .btn {
+  &,
   &:link,
   &:visited {
     display: inline-block;
@@ -11,6 +12,10 @@
     transition: all 0.2s;
     position: relative;
     font-size: 1.6rem;
+
+    // for the <button> element
+    border: none;
+    cursor: pointer;
   }
 
   &::after {
@@ -36,7 +41,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 0.5rem $color-shadow;
   }
