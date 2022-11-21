@@ -16,12 +16,12 @@
     z-index: 1002;
   }
 
-  &__checkbox:checked ~ &__background {
+  &__checkbox:checked ~ &__menu {
     clip-path: circle(100%);
     z-index: 1000;
   }
 
-  &__background {
+  &__menu {
     position: fixed;
     top: 0;
     left: 0;
