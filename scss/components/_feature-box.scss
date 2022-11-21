@@ -12,7 +12,7 @@
   &__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
-    @include gradient-text;
+    @include gradient-text($color-primary-light, $color-primary-dark);
   }
 
   &:hover {

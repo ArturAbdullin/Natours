@@ -1,5 +1,3 @@
-@use "variables" as *;
-
 @mixin clearfix {
   &::after {
     content: "";
@@ -15,12 +13,8 @@
   );
 }
 
-@mixin gradient-text {
-  background-image: linear-gradient(
-    to right,
-    $color-primary-light,
-    $color-primary-dark
-  );
+@mixin gradient-text($color-from, $color-to) {
+  background-image: linear-gradient(to right, $color-from, $color-to);
   -webkit-background-clip: text;
   color: transparent;
 }

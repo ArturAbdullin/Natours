@@ -13,7 +13,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  @include gradient-text;
+  @include gradient-text($color-primary-light, $color-primary-dark);
   letter-spacing: 2px;
 }
 
