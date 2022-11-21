@@ -6,7 +6,7 @@
   }
 
   &__button {
-    background-color: orange;
+    background-color: $color-background-light;
     height: 7rem;
     width: 7rem;
     position: fixed;
@@ -14,15 +14,18 @@
     right: 6rem;
     border-radius: 50%;
     z-index: 1002;
+    box-shadow: 0 1rem 3rem $color-shadow;
+    text-align: center;
+    cursor: pointer;
   }
 
   &__checkbox:checked ~ &__menu {
     clip-path: circle(100%);
     z-index: 1000;
+  }
 
-    .navigation__nav {
-      transform: translateX(0rem);
-    }
+  &__checkbox:checked ~ &__menu &__nav {
+    transform: translateX(0rem);
   }
 
   &__menu {
@@ -96,6 +99,58 @@
       background-position: 100%;
       color: $color-primary;
       transform: translateX(1rem);
+    }
+  }
+
+  &__icon {
+    position: relative;
+    margin-top: 3.3rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $color-background-dark;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.5s;
+    }
+
+    &::before {
+      top: -0.8rem;
+    }
+
+    &::after {
+      top: 0.8rem;
+    }
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+
+    &::before {
+      top: 0;
+      transform: rotate(135deg);
+    }
+
+    &::after {
+      top: 0;
+      transform: rotate(-135deg);
     }
   }
 }
