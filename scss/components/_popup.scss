@@ -27,6 +27,10 @@
       font-size: 3rem;
       color: $color-font-dark;
     }
+
+    &:hover {
+      color: $color-primary;
+    }
   }
 
   &__content {
