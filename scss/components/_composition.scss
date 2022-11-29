@@ -12,30 +12,57 @@
     transition: all 0.2s;
     outline-offset: 2rem;
 
+    @include respond(tablet-portrait) {
+      position: relative;
+      float: left;
+      width: calc(100% / 3);
+      box-shadow: 0 1.5rem 3rem $color-shadow;
+    }
+
     &--p1 {
       left: 0;
       top: -2rem;
+
+      @include respond(tablet-portrait) {
+        top: 1rem;
+        left: 2rem;
+      }
     }
 
     &--p2 {
       right: 0;
       top: 2rem;
+
+      @include respond(tablet-portrait) {
+        top: 0;
+        z-index: 1;
+      }
     }
 
     &--p3 {
       left: 20%;
       top: 10rem;
+
+      @include respond(tablet-portrait) {
+        top: 1.5rem;
+        left: -1.5rem;
+      }
     }
 
     &:hover {
       outline: 1.5rem solid $color-primary;
-      transform: scale(1.05) translateY(-.5rem);
+      transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem $color-shadow;
       z-index: 1;
+
+      @include respond(tablet-portrait) {
+        outline: 1rem solid $color-primary;
+        transform: scale(1.1) translateY(-0.5rem);
+      }
     }
   }
 
   &:hover &__photo:not(:hover) {
-    transform: scale(.95);
+    transform: scale(0.95);
   }
 }
