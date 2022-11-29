@@ -57,3 +57,16 @@ $fz-btn: $fz-default;
 $fz-btn-text: $fz-default;
 
 $fz-popup-text: $fz-default;
+
+// === FOR MEDIA QUERIES ===
+// === BREAK POINTS ===
+$bp-phone: 37.5em; // = 600px / 16px;
+$bp-tablet-portrait: 56.25em; // = 900px / 16px;
+$bp-tablet-landscape: 75em; // = 1200px / 16px;
+$bp-big-desktop: 112.5em; // = 1800px / 16;
+// === FONT SIZES ===
+// phone
+$fz-default-phone: 1.6rem;
+
+$fz-header-title-phone: 5rem;
+$fz-heading-secondary-phone: 2.5rem;

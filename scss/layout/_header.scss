@@ -36,6 +36,11 @@
     letter-spacing: 3.5rem;
     margin-right: -3.5rem;
     animation-name: moveInLeft;
+
+    @include respond(phone) {
+      font-size: $fz-header-title-phone;
+      letter-spacing: 1rem;
+    }
   }
 
   &__subtitle {
@@ -46,5 +51,10 @@
     margin-bottom: 6rem;
     white-space: nowrap;
     animation-name: moveInRight;
+
+    @include respond(phone) {
+      letter-spacing: 0.6rem;
+      margin-right: -3.2rem;
+    }
   }
 }
