@@ -8,7 +8,7 @@
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
-  font-size: $default-font-size;
+  font-size: $fz-default;
   transform: skewX(-12deg);
 
   &__shape {
@@ -39,7 +39,7 @@
     transform: translate(-50%, 20%);
     color: $color-font-light;
     text-transform: uppercase;
-    font-size: 1.7rem;
+    font-size: $fz-story-caption;
     text-align: center;
     opacity: 0;
     transition: all 0.5s;

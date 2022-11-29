@@ -28,4 +28,32 @@ $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
 
 // === FONT SIZES ===
-$default-font-size: 1.6rem;
+$fz-default: 1.6rem;
+
+$fz-header-title: 6rem;
+$fz-header-subtitle: 2rem;
+
+$fz-heading-secondary: 3rem;
+$fz-heading-tertiary: $fz-default;
+$fz-paragraph: $fz-default;
+
+$fz-footer: 1.4rem;
+
+$fz-story: $fz-default;
+$fz-story-caption: 1.7rem;
+
+$fz-form-input: 1.5rem;
+$fz-form-input-label: 1.2rem;
+$fz-form-radio-label: $fz-default;
+
+$fz-feature-box-icon: 6rem;
+
+$fz-card: $fz-default;
+$fz-card-heading: 2.8rem;
+$fz-card-list-item: $fz-default;
+$fz-card-price-value: 6rem;
+
+$fz-btn: $fz-default;
+$fz-btn-text: $fz-default;
+
+$fz-popup-text: $fz-default;

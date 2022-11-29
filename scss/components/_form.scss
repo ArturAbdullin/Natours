@@ -8,7 +8,7 @@
   &__input {
     font-family: inherit;
     color: inherit;
-    font-size: 1.5rem;
+    font-size: $fz-default;
     padding: 1.5rem 2rem;
     border-radius: 2px;
     background-color: rgba($color-background-light, 0.5);
@@ -34,7 +34,7 @@
   }
 
   &__label {
-    font-size: 1.2rem;
+    font-size: $fz-form-input-label;
     font-weight: 700;
     margin-left: 2rem;
     margin-top: 0.7rem;
@@ -56,7 +56,7 @@
   }
 
   &__radio-label {
-    font-size: $default-font-size;
+    font-size: $fz-default;
     cursor: pointer;
     position: relative;
     padding-left: 2.5rem;

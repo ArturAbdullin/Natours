@@ -11,7 +11,7 @@
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
-    font-size: 1.6rem;
+    font-size: $fz-btn;
 
     // for the <button> element
     border: none;
@@ -75,7 +75,7 @@
 .btn-text {
   &:link,
   &:visited {
-    font-size: 1.6rem;
+    font-size: $fz-btn-text;
     color: $color-primary;
     display: inline-block;
     text-decoration: none;

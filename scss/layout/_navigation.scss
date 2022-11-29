@@ -73,7 +73,7 @@
     &:link,
     &:visited {
       display: inline-block;
-      font-size: 3rem;
+      font-size: $fz-heading-secondary;
       font-weight: 300;
       padding: 1rem 2rem;
       color: $color-font-light;
