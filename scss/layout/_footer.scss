@@ -6,6 +6,10 @@
   font-size: $fz-footer;
   color: $color-font-light-2;
 
+  @include respond(tablet-portrait) {
+    padding: 8rem 0;
+  }
+
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
@@ -20,6 +24,11 @@
     border-top: 1px solid $color-background-gray-3;
     padding-top: 2rem;
     display: inline-block;
+
+    @include respond(tablet-portrait) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -71,5 +80,11 @@
     padding-top: 2rem;
     width: 82%;
     float: right;
+
+    @include respond(tablet-portrait) {
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
   }
 }
