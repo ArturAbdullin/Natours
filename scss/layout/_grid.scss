@@ -10,6 +10,7 @@
 
     @include respond(tablet-portrait) {
       margin-bottom: $gutter-vertical-tablet-portrait;
+      padding: 0 3rem;
     }
   }
 
